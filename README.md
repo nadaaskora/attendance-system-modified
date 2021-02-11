@@ -20,9 +20,9 @@ Use JSON Server
 `index.html`
 
 > For Admin user
-> `admin.html`
-> `adminreport.html`
-> `adminmonthlyreport.html`
+- `admin.html`
+- `adminreport.html`
+- `adminmonthlyreport.html`
 > For employee
-> ` attendence.html`
-> `employees.html`
+- ` attendence.html`
+- `employees.html`
