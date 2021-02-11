@@ -1,14 +1,28 @@
 <!-- @format -->
 
+# project overview
+
+> attendence system has 2 users Admin who registers new users and employee who confirm user attendence.
+> the system will set absent users who has not registered in the system today after particular time automatically.
+> the system will automatically empty users who registered today arrays' object everyday at "23:59:00".
+
 ## Requirements
 
 Install JSON Server
 `npm install -g json-server`
 
-### to post employees attendance time
+Use JSON Server
 
-`json-server --watch data/attendance.json -p 4000`
+`json-server --watch data/users.json -p 3000`
 
-### to post a new employee
+## run project
 
-`json-server --watch data/user-attandance.json -p 3000`
+`index.html`
+
+> For Admin user
+> `admin.html`
+> `adminreport.html`
+> `adminmonthlyreport.html`
+> For employee
+> ` attendence.html`
+> `employees.html`
