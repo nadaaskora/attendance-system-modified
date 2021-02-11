@@ -1,0 +1,347 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "name": "Leanne Graham",
+      "username": "Bret",
+      "email": "Sincere@april.biz",
+      "address": "Kulas Light",
+      "age": 30
+    },
+    {
+      "id": 2,
+      "name": "Ervin Howell",
+      "username": "Antonette",
+      "email": "Shanna@melissa.tv",
+      "address": "Victor Plains",
+      "age": 35
+    },
+    {
+      "id": 3,
+      "name": "Clementine Bauch",
+      "username": "Samantha",
+      "email": "Nathan@yesenia.net",
+      "address": "Douglas Extension",
+      "age": 33
+    },
+    {
+      "id": 4,
+      "name": "Patricia Lebsack",
+      "username": "Karianne",
+      "email": "Julianne.OConner@kory.org",
+      "address": "Hoeger Mall",
+      "age": 25
+    },
+    {
+      "id": 5,
+      "name": "Chelsey Dietrich",
+      "username": "Kamren",
+      "email": "Lucio_Hettinger@annie.ca",
+      "address": "Skiles Walks",
+      "age": 27
+    },
+    {
+      "id": 6,
+      "name": "Mrs. Dennis Schulist",
+      "username": "Leopoldo_Corkery",
+      "email": "Karley_Dach@jasper.info",
+      "address": "Norberto Crossing",
+      "age": 33
+    },
+    {
+      "id": 7,
+      "name": "Kurtis Weissnat",
+      "username": "Elwyn.Skiles",
+      "email": "Telly.Hoeger@billy.biz",
+      "address": "Rex Trail",
+      "age": 37
+    },
+    {
+      "id": 8,
+      "name": "Nicholas Runolfsdottir V",
+      "username": "Maxime_Nienow",
+      "email": "Sherwood@rosamond.me",
+      "address": "Ellsworth Summit",
+      "age": 38
+    },
+    {
+      "id": 9,
+      "name": "Glenna Reichert",
+      "username": "Delphine",
+      "email": "Chaim_McDermott@dana.io",
+      "address": "Dayna Park",
+      "age": 35
+    },
+    {
+      "id": 10,
+      "name": "Clementina DuBuque",
+      "username": "Moriah.Stanton",
+      "email": "Rey.Padberg@karina.biz",
+      "address": "Kattie Turnpike",
+      "age": 39
+    },
+    {
+      "name": "Nada Ahmed",
+      "username": "nada",
+      "email": "n@gmail.com",
+      "address": "123 street",
+      "age": "26",
+      "id": 11
+    },
+    {
+      "username": "sjve7",
+      "password": "sjve7",
+      "name": "Nada Ibrahim",
+      "email": "a@gmail.com",
+      "address": "123, xa",
+      "age": "22",
+      "id": 12
+    },
+    {
+      "username": "2ibhs",
+      "password": "2ibhs",
+      "name": "Nada Ibrahim",
+      "email": "n@aalia.com",
+      "address": "123, xa",
+      "age": "25",
+      "id": 13
+    },
+    {
+      "username": "cbif1",
+      "password": "cbif1",
+      "name": "Nada Ibrahim",
+      "email": "na@gmail.com",
+      "address": "cxc",
+      "age": "22",
+      "id": 14
+    }
+  ],
+  "users": [
+    {
+      "id": 2,
+      "username": "Antonette",
+      "dailyReport": {
+        "arrivalTime": "20:10:28",
+        "attended": 0,
+        "lateDaily": 1,
+        "absent": 0
+      }
+    },
+    {
+      "id": 6,
+      "username": "Leopoldo_Corkery",
+      "dailyReport": {
+        "arrivalTime": "20:10:33",
+        "attended": 0,
+        "lateDaily": 1,
+        "absent": 0
+      }
+    },
+    {
+      "id": 1,
+      "username": "Bret",
+      "dailyReport": {
+        "arrivalTime": "20:10:41",
+        "attended": 0,
+        "lateDaily": 1,
+        "absent": 0
+      }
+    },
+    {
+      "id": 3,
+      "username": "Samantha",
+      "dailyReport": {
+        "arrivalTime": "21:58:01",
+        "attended": 0,
+        "lateDaily": 1,
+        "absent": 0
+      }
+    },
+    {
+      "id": 4,
+      "username": "Karianne",
+      "dailyReport": {
+        "arrivalTime": "23:31:36",
+        "attended": 0,
+        "lateDaily": 1,
+        "absent": 1
+      }
+    },
+    {
+      "id": 5,
+      "username": "Kamren",
+      "dailyReport": {
+        "arrivalTime": "23:31:36",
+        "attended": 0,
+        "lateDaily": 1,
+        "absent": 1
+      }
+    },
+    {
+      "id": 7,
+      "username": "Elwyn.Skiles",
+      "dailyReport": {
+        "arrivalTime": "23:31:36",
+        "attended": 0,
+        "lateDaily": 1,
+        "absent": 1
+      }
+    },
+    {
+      "id": 8,
+      "username": "Maxime_Nienow",
+      "dailyReport": {
+        "arrivalTime": "23:31:36",
+        "attended": 0,
+        "lateDaily": 1,
+        "absent": 1
+      }
+    },
+    {
+      "id": 9,
+      "username": "Delphine",
+      "dailyReport": {
+        "arrivalTime": "23:31:36",
+        "attended": 0,
+        "lateDaily": 1,
+        "absent": 1
+      }
+    },
+    {
+      "id": 10,
+      "username": "Moriah.Stanton",
+      "dailyReport": {
+        "arrivalTime": "23:31:36",
+        "attended": 0,
+        "lateDaily": 1,
+        "absent": 1
+      }
+    },
+    {
+      "id": 11,
+      "username": "nada",
+      "dailyReport": {
+        "arrivalTime": "23:31:36",
+        "attended": 0,
+        "lateDaily": 1,
+        "absent": 1
+      }
+    },
+    {
+      "id": 12,
+      "username": "sjve7",
+      "dailyReport": {
+        "arrivalTime": "23:31:36",
+        "attended": 0,
+        "lateDaily": 1,
+        "absent": 1
+      }
+    },
+    {
+      "id": 13,
+      "username": "2ibhs",
+      "dailyReport": {
+        "arrivalTime": "23:31:36",
+        "attended": 0,
+        "lateDaily": 1,
+        "absent": 1
+      }
+    },
+    {
+      "id": 14,
+      "username": "cbif1",
+      "dailyReport": {
+        "arrivalTime": "23:31:36",
+        "attended": 0,
+        "lateDaily": 1,
+        "absent": 1
+      }
+    }
+  ],
+  "monthlyreport": [
+    {
+      "username": "Bret",
+      "lateCounter": 6,
+      "attended": 3,
+      "absent": 3,
+      "id": 1
+    },
+    {
+      "lateCounter": 3,
+      "attended": 4,
+      "absent": 3,
+      "username": "Antonette",
+      "id": 2
+    },
+    {
+      "lateCounter": 3,
+      "attended": 1,
+      "absent": 1,
+      "username": "Leopoldo_Corkery",
+      "id": 6
+    },
+    {
+      "username": "Samantha",
+      "lateCounter": 3,
+      "attended": 3,
+      "absent": 3,
+      "id": 3
+    },
+    {
+      "id": 4,
+      "username": "Karianne",
+      "attended": 0,
+      "absent": 0,
+      "lateCounter": 0
+    },
+    {
+      "lateCounter": 1,
+      "attended": 0,
+      "absent": 0,
+      "username": "Kamren",
+      "id": 5
+    },
+    {
+      "id": 6,
+      "username": "Leopoldo_Corkery",
+      "attended": 0,
+      "absent": 0,
+      "lateCounter": 0
+    },
+    {
+      "id": 7,
+      "username": "Elwyn.Skiles",
+      "attended": 0,
+      "absent": 0,
+      "lateCounter": 0
+    },
+    {
+      "id": 8,
+      "username": "Maxime_Nienow",
+      "attended": 0,
+      "absent": 0,
+      "lateCounter": 0
+    },
+    {
+      "id": 9,
+      "username": "Delphine",
+      "attended": 0,
+      "absent": 0,
+      "lateCounter": 0
+    },
+    {
+      "id": 10,
+      "username": "Moriah.Stanton",
+      "attended": 0,
+      "absent": 0,
+      "lateCounter": 0
+    },
+    {
+      "lateCounter": 3,
+      "attended": 3,
+      "absent": 3,
+      "username": "nada",
+      "id": 11
+    }
+  ]
+}

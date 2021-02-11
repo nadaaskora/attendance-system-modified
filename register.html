@@ -1,0 +1,251 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+		<title>AttendanceSystem</title>
+		<link
+			href="css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+			integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+			crossorigin="anonymous"
+		/>
+		<style>
+			.bd-placeholder-img {
+				font-size: 1.125rem;
+				text-anchor: middle;
+				-webkit-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+			}
+
+			@media (min-width: 768px) {
+				.bd-placeholder-img-lg {
+					font-size: 3.5rem;
+				}
+			}
+		</style>
+		<link href="css/style.css" rel="stylesheet" />
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-md navbar-dark bg-dark navbar-default">
+			<a class="navbar-brand" href="#">AttendanceSystem</a>
+			<button
+				class="navbar-toggler"
+				type="button"
+				data-toggle="collapse"
+				data-target="#navbarsExampleDefault"
+				aria-controls="navbarsExampleDefault"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
+			>
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+				<ul class="navbar-nav">
+					<li class="nav-item active">
+						<a class="nav-link" href="index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="employees.html">Profile</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="attendance.html">Attendance</a>
+					</li>
+				</ul>
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="login.html">Logout</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<header id="header">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-9">
+						<h3>
+							<i class="fas fa-cog"></i>
+							Register New User
+						</h3>
+					</div>
+					<!-- <div class="col-md-3">
+						<button type="button" class="btn btn-secondary bg-white text-dark new-user">
+							Add New Employee
+						</button>
+					</div> -->
+				</div>
+			</div>
+		</header>
+
+		<main role="main" class="container">
+			<!-- main area -->
+			<section id="main">
+				<div class="container">
+					<div class="row d-flex align-items-center justify-content-center">
+						<div class="col-md-10">
+							<form
+								id="add-user"
+								class="card card-body bg-light needs-validation"
+								novalidate
+							>
+								<div class="form-group row">
+									<label for="fname" class="col-sm-2 col-form-label"
+										>First Name</label
+									>
+									<div class="col-sm-10">
+										<input
+											type="text"
+											class="form-control"
+											id="fname"
+											name="fname"
+											placeholder="First Name"
+											required
+										/>
+										<div class="valid-feedback">Valid.</div>
+										<div class="invalid-feedback">
+											Please fill out this field.
+										</div>
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="lname" class="col-sm-2 col-form-label"
+										>Last Name</label
+									>
+									<div class="col-sm-10">
+										<input
+											type="text"
+											class="form-control"
+											id="lname"
+											name="lname"
+											placeholder="Last Name"
+											required
+										/>
+										<div class="valid-feedback">Valid.</div>
+										<div class="invalid-feedback">
+											Please fill out this field.
+										</div>
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="address" class="col-sm-2 col-form-label"
+										>Address</label
+									>
+									<div class="col-sm-10">
+										<input
+											id="address"
+											name="address"
+											type="text"
+											class="form-control"
+											placeholder="Address"
+											required
+										/>
+										<div class="valid-feedback">Valid.</div>
+										<div class="invalid-feedback">
+											Please fill out this field.
+										</div>
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="email" class="col-sm-2 col-form-label"
+										>Email</label
+									>
+									<div class="col-sm-10">
+										<input
+											id="email"
+											name="email"
+											type="email"
+											class="form-control"
+											placeholder="Email"
+											required
+										/>
+										<div class="valid-feedback">Valid.</div>
+										<div class="invalid-feedback">
+											Please fill out this field.
+										</div>
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="age" class="col-sm-2 col-form-label">Age</label>
+									<div class="col-sm-10">
+										<input
+											id="age"
+											name="age"
+											type="number"
+											class="form-control"
+											placeholder="Age"
+											required
+										/>
+									</div>
+								</div>
+								<input
+									type="submit"
+									class="btn btn-dark btn-lg btn-block"
+									value="Register"
+								/>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<script
+			src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="js/bootstrap.bundle.min.js"
+			integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o"
+			crossorigin="anonymous"
+		></script>
+		<script src="https://smtpjs.com/v3/smtp.js"></script>
+		<script>
+			// Disable form submissions if there are invalid fields
+			(function () {
+				'use strict';
+				window.addEventListener(
+					'load',
+					function () {
+						// Get the forms we want to add validation styles to
+						var forms = document.getElementsByClassName('needs-validation');
+						// Loop over them and prevent submission
+						var validation = Array.prototype.filter.call(
+							forms,
+							function (form) {
+								form.addEventListener(
+									'submit',
+									function (event) {
+										if (form.checkValidity() === false) {
+											event.preventDefault();
+											event.stopPropagation();
+										}
+										form.classList.add('was-validated');
+									},
+									false
+								);
+							}
+						);
+					},
+					false
+				);
+			})();
+		</script>
+
+		<script src="js/register.js"></script>
+	</body>
+</html>

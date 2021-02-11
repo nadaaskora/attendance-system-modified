@@ -1,0 +1,240 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+		<title>AttendanceSystem</title>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+		<link
+			href="css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+			integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+			crossorigin="anonymous"
+		/>
+		<style>
+			.bd-placeholder-img {
+				font-size: 1.125rem;
+				text-anchor: middle;
+				-webkit-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+			}
+
+			@media (min-width: 768px) {
+				.bd-placeholder-img-lg {
+					font-size: 3.5rem;
+				}
+			}
+		</style>
+		<link href="css/style.css" rel="stylesheet" />
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-md navbar-dark bg-dark navbar-default">
+			<a class="navbar-brand" href="#">AttendanceSystem</a>
+			<button
+				class="navbar-toggler"
+				type="button"
+				data-toggle="collapse"
+				data-target="#navbarsExampleDefault"
+				aria-controls="navbarsExampleDefault"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
+			>
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+				<ul class="navbar-nav">
+					<li class="nav-item active">
+						<a class="nav-link" href="index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="employees.html">Profile</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="attendance.html">Attendance</a>
+					</li>
+				</ul>
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="login.html">Logout</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<header id="header">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-9">
+						<h3>
+							<i class="fas fa-user"></i>
+							Employees
+						</h3>
+					</div>
+					<!-- <div class="col-md-3">
+						<button type="button" class="btn btn-secondary bg-white text-dark new-user">
+							Add New Employee
+						</button>
+					</div> -->
+				</div>
+			</div>
+		</header>
+
+		<main role="main" class="container">
+			<section id="breadcrumb" aria-label="breadcrumb">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+				</ol>
+			</section>
+			<!-- main area -->
+			<section id="main">
+				<div class="row">
+					<div class="col-md-3">
+						<div class="list-group">
+							<a
+								href="#"
+								class="list-group-item list-group-item-action disabled main-color-bg"
+							>
+								Dashboard
+							</a>
+							<a
+								href="index.html"
+								class="list-group-item list-group-item-action"
+								><i class="fas fa-home"></i> Home</a
+							>
+
+							<a
+								href="employees.html"
+								class="list-group-item list-group-item-action"
+								><i class="fas fa-user"></i> Employees</a
+							>
+						</div>
+					</div>
+					<div class="col-md-9">
+						<div class="card">
+							<div class="card-header main-color-bg">Employees</div>
+							<div class="card-body">
+								<div class="row">
+									<div class="col-md-12">
+										<input
+											class="form-control"
+											type="text"
+											id="filter-users"
+											placeholder="Filter Users..."
+										/>
+									</div>
+								</div>
+								<br />
+								<table class="table table-striped table-hover">
+									<thead>
+										<tr>
+											<th scope="col">Name</th>
+											<th scope="col">username</th>
+											<th scope="col"></th>
+										</tr>
+									</thead>
+									<tbody></tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!-- Modal -->
+		<!-- monthly report -->
+		<div
+			class="modal fade"
+			id="monthlyReport"
+			tabindex="-1"
+			role="dialog"
+			aria-labelledby="monthlyReport"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title" id="myModalLabel">Employee Name</h4>
+						<button
+							type="button"
+							class="close"
+							data-dismiss="modal"
+							aria-label="Close"
+						>
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<p id="attendance-times">Attendance Times</p>
+						<p id="late-times">Late Times</p>
+						<p id="absence-times">Absence Times</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-dark btn" data-dismiss="modal">
+							Close
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- daily report -->
+		<div
+			class="modal fade"
+			id="dailyReport"
+			tabindex="-1"
+			role="dialog"
+			aria-labelledby="dailyReport"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title" id="modal-emp-name">Employee Name</h4>
+						<button
+							type="button"
+							class="close"
+							data-dismiss="modal"
+							aria-label="Close"
+						>
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<p id="modal-attendance-time">Attendance Time</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-dark btn" data-dismiss="modal">
+							Close
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script
+			src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="js/bootstrap.bundle.min.js"
+			integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o"
+			crossorigin="anonymous"
+		></script>
+		<script src="js/employees.js" type="module"></script>
+	</body>
+</html>
