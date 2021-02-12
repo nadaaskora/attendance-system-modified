@@ -5,6 +5,9 @@ let address = document.getElementById('address');
 let age = document.getElementById('age');
 let random = Math.floor(Math.random()*100000000).toString(36);
 
+function isString(name) {
+	return typeof name === 'string' || name instanceof String;
+}
 function addUserPost() {
     let name= `${fname.value} ${lname.value}`;
     fetch('http://localhost:3000/employees', {
@@ -44,6 +47,7 @@ async function sendMail(){
         Body : `Username $"user" <br/> Password pass`
     })
 }
+
 
 const submitUser=document.getElementById('add-user');
 

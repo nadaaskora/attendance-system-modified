@@ -114,11 +114,12 @@
 											name="fname"
 											placeholder="First Name"
 											required
+											pattern="^[A-Za-z]+$"
 										/>
-										<div class="valid-feedback">Valid.</div>
 										<div class="invalid-feedback">
 											Please fill out this field.
 										</div>
+										<div class="valid-feedback">Valid.</div>
 									</div>
 								</div>
 								<div class="form-group row">
@@ -133,11 +134,12 @@
 											name="lname"
 											placeholder="Last Name"
 											required
+											pattern="^[A-Za-z]+$"
 										/>
-										<div class="valid-feedback">Valid.</div>
 										<div class="invalid-feedback">
 											Please fill out this field.
 										</div>
+										<div class="valid-feedback">Valid.</div>
 									</div>
 								</div>
 								<div class="form-group row">
@@ -171,6 +173,7 @@
 											class="form-control"
 											placeholder="Email"
 											required
+											pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"
 										/>
 										<div class="valid-feedback">Valid.</div>
 										<div class="invalid-feedback">
@@ -187,6 +190,7 @@
 											type="number"
 											class="form-control"
 											placeholder="Age"
+											min="20"
 											required
 										/>
 									</div>

@@ -114,24 +114,23 @@
       "address": "cxc",
       "age": "22",
       "id": 14
+    },
+    {
+      "username": "if6by",
+      "password": "if6by",
+      "name": "Nada Ibrahim",
+      "email": "a@gmail.com",
+      "address": "ff",
+      "age": "22",
+      "id": 15
     }
   ],
   "users": [
     {
-      "id": 2,
-      "username": "Antonette",
+      "id": 3,
+      "username": "Samantha",
       "dailyReport": {
-        "arrivalTime": "20:10:28",
-        "attended": 0,
-        "lateDaily": 1,
-        "absent": 0
-      }
-    },
-    {
-      "id": 6,
-      "username": "Leopoldo_Corkery",
-      "dailyReport": {
-        "arrivalTime": "20:10:33",
+        "arrivalTime": "22:42:07",
         "attended": 0,
         "lateDaily": 1,
         "absent": 0
@@ -141,150 +140,49 @@
       "id": 1,
       "username": "Bret",
       "dailyReport": {
-        "arrivalTime": "20:10:41",
+        "arrivalTime": "22:42:52",
         "attended": 0,
         "lateDaily": 1,
         "absent": 0
       }
     },
     {
-      "id": 3,
-      "username": "Samantha",
+      "id": 6,
+      "username": "Leopoldo_Corkery",
       "dailyReport": {
-        "arrivalTime": "21:58:01",
+        "arrivalTime": "23:58:29",
         "attended": 0,
         "lateDaily": 1,
         "absent": 0
-      }
-    },
-    {
-      "id": 4,
-      "username": "Karianne",
-      "dailyReport": {
-        "arrivalTime": "23:31:36",
-        "attended": 0,
-        "lateDaily": 1,
-        "absent": 1
-      }
-    },
-    {
-      "id": 5,
-      "username": "Kamren",
-      "dailyReport": {
-        "arrivalTime": "23:31:36",
-        "attended": 0,
-        "lateDaily": 1,
-        "absent": 1
-      }
-    },
-    {
-      "id": 7,
-      "username": "Elwyn.Skiles",
-      "dailyReport": {
-        "arrivalTime": "23:31:36",
-        "attended": 0,
-        "lateDaily": 1,
-        "absent": 1
-      }
-    },
-    {
-      "id": 8,
-      "username": "Maxime_Nienow",
-      "dailyReport": {
-        "arrivalTime": "23:31:36",
-        "attended": 0,
-        "lateDaily": 1,
-        "absent": 1
-      }
-    },
-    {
-      "id": 9,
-      "username": "Delphine",
-      "dailyReport": {
-        "arrivalTime": "23:31:36",
-        "attended": 0,
-        "lateDaily": 1,
-        "absent": 1
-      }
-    },
-    {
-      "id": 10,
-      "username": "Moriah.Stanton",
-      "dailyReport": {
-        "arrivalTime": "23:31:36",
-        "attended": 0,
-        "lateDaily": 1,
-        "absent": 1
-      }
-    },
-    {
-      "id": 11,
-      "username": "nada",
-      "dailyReport": {
-        "arrivalTime": "23:31:36",
-        "attended": 0,
-        "lateDaily": 1,
-        "absent": 1
-      }
-    },
-    {
-      "id": 12,
-      "username": "sjve7",
-      "dailyReport": {
-        "arrivalTime": "23:31:36",
-        "attended": 0,
-        "lateDaily": 1,
-        "absent": 1
-      }
-    },
-    {
-      "id": 13,
-      "username": "2ibhs",
-      "dailyReport": {
-        "arrivalTime": "23:31:36",
-        "attended": 0,
-        "lateDaily": 1,
-        "absent": 1
-      }
-    },
-    {
-      "id": 14,
-      "username": "cbif1",
-      "dailyReport": {
-        "arrivalTime": "23:31:36",
-        "attended": 0,
-        "lateDaily": 1,
-        "absent": 1
       }
     }
   ],
   "monthlyreport": [
     {
+      "lateCounter": 7,
+      "attended": 4,
+      "absent": 4,
       "username": "Bret",
-      "lateCounter": 6,
-      "attended": 3,
-      "absent": 3,
       "id": 1
     },
     {
-      "lateCounter": 3,
-      "attended": 4,
-      "absent": 3,
+      "lateCounter": 4,
+      "attended": 5,
+      "absent": 4,
       "username": "Antonette",
       "id": 2
     },
     {
-      "lateCounter": 3,
-      "attended": 1,
-      "absent": 1,
-      "username": "Leopoldo_Corkery",
+      "lateCounter": 6,
+      "attended": 4,
+      "absent": 4,
       "id": 6
     },
     {
+      "lateCounter": 8,
+      "attended": 8,
+      "absent": 8,
       "username": "Samantha",
-      "lateCounter": 3,
-      "attended": 3,
-      "absent": 3,
       "id": 3
     },
     {
@@ -337,9 +235,9 @@
       "lateCounter": 0
     },
     {
-      "lateCounter": 3,
+      "lateCounter": 2,
       "attended": 3,
-      "absent": 3,
+      "absent": 1,
       "username": "nada",
       "id": 11
     }

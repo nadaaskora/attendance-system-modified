@@ -4,6 +4,11 @@ let users=fetch('../data/users.json')
 const table = document.querySelector('.table tbody');
 let modalEmpName = document.getElementById('modal-emp-name');
 let modalEmpTime = document.getElementById('modal-attendance-time');
+
+let montlhly_modalEmpName = document.getElementById('modal-monthly-name');
+let monthly_modalEmpTime = document.getElementById('modal-attendance-times');
+let monthly_modalEmpAbsence = document.getElementById('modal-absence-times');
+let monthly_modalEmpLate = document.getElementById('modal-late-times');
 let search_term = '';
 
 // console.log(fetchDailyReports);
@@ -33,10 +38,7 @@ function createTableElements(){
                               Daily Report
                               </a>`;
     monthlyReport.innerHTML = `<a type="button"
-                              class="btn btn-danger text-light m-1"
-                              id="monthly-report"
-                              data-toggle="modal"
-                              data-target="#monthlyReport">
+                              class="btn btn-danger text-light m-1 monthly-report">
                               Monthly Report
                               </a>`;
     report_buttons.appendChild(dailyReport);
@@ -63,6 +65,7 @@ function fetchDailyReport(e){
         e.target.setAttribute('data-toggle','modal');
         e.target.setAttribute('data-target','#dailyReport');
         modalEmpName.innerText = username;
+        console.log(modalEmpName)
         modalEmpTime.innerText = `Arrived Today at: ${user.dailyReport["arrivalTime"]}`;
         break;
       }
@@ -77,7 +80,36 @@ function fetchDailyReport(e){
   });
 
 }
+function fetchMonthlyReport(e){
+  let username = e.target.parentElement.parentElement.previousElementSibling.innerText;
+  console.log('wasl', username);
+  users.then((data)=>{
+    for(let i in data.monthlyreport){
+      let user=data.monthlyreport[i];
+      console.log(user.username);
+      if(username==user.username){
+        console.log('ya salam',user.username);
 
+        e.target.setAttribute('data-toggle','modal');
+        e.target.setAttribute('data-target','#monthlyReport');
+        montlhly_modalEmpName.innerText = username;
+        monthly_modalEmpAbsence.innerText = `Absent: ${user.absent} times`;
+        monthly_modalEmpLate.innerText =  `Late: ${user.lateCounter} times`;
+        monthly_modalEmpTime.innerText =  `Attended on time: ${user.attended} times`;
+        
+        break;
+      }
+      else{
+        e.target.setAttribute('data-toggle','modal');
+        e.target.setAttribute('data-target','#monthlyReport');
+        modalEmpName.innerText = username;
+        modalEmpTime.innerText = ``;
+      }
+    }
+
+  });
+
+}
 createTableElements();
 
 const filterUsers=document.getElementById('filter-users');
@@ -93,5 +125,12 @@ setTimeout(() => {
   fetchDailyReports.forEach((r)=>{
     // console.log(r);
     r.addEventListener('click',fetchDailyReport);
+  });
+}, 3000);
+
+setTimeout(() => {
+let fetchMonthlyReports=document.querySelectorAll('.monthly-report');
+  fetchMonthlyReports.forEach((m)=>{
+    m.addEventListener('click',fetchMonthlyReport);
   });
 }, 3000);
